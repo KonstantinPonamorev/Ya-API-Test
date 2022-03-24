@@ -2,7 +2,7 @@ import requests
 from pprint import pprint
 
 
-class YaUploader:
+class YaNewFolder:
     def __init__(self, token: str):
         self.token = token
 
@@ -21,5 +21,5 @@ class YaUploader:
 if __name__ == '__main__':
     token = input('Введите ваш Token: ')
     folder_name = input('Введите название папки')
-    uploader = YaUploader(token)
-    result = uploader.put_new_folder(folder_name)
+    ya_new_folder = YaNewFolder(token)
+    result = ya_new_folder.put_new_folder(folder_name)
