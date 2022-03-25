@@ -15,8 +15,8 @@ class YaNewFolder:
         headers = self.get_headers()
         params = {'path': folder_name}
         response = requests.put(new_folder_url, headers=headers, params=params)
-        print(response)
-        return response
+        print(response.status_code)
+        return response.status_code
 
 if __name__ == '__main__':
     token = input('Введите ваш Token: ')
